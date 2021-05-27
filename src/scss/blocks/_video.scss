@@ -1,0 +1,75 @@
+.video{
+    padding: 110px 0;
+}
+.video-title{
+    // text-align: center;
+    margin-bottom: 70px;
+    @media (min-width: 768px){
+        font-size: 35px;
+        text-align: center;
+    }
+}
+.tabcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px){
+        flex-direction: row;
+    }
+}
+.tab{
+    
+    @media (min-width: 768px){
+        margin-right: 50px;
+    }
+}
+.tab__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-bottom: 20px;
+    @media (min-width: 900px){
+        flex-direction: column;
+    }
+}
+.tab__item{
+    font-size: 18px;
+    color:var(--linkgreen);
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    
+    &:hover{
+        color:var(--gren);
+    }
+    @media (min-width: 768px){
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+.tab_active{
+    color:var(--gren);
+}
+.tabcontent{
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    height: auto;
+    iframe{
+        width: 100%;
+        height: auto;
+        
+        @media (min-width: 768px){
+            width: 560px;
+            height: 315px;
+        }
+    }
+    @media (min-width: 768px){
+        max-width: 560px;
+    }
+}

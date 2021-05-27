@@ -1,0 +1,122 @@
+:root {
+    --progblock: rgba(126, 139, 86, 0.2);
+    --laitegren:rgba(71, 82, 40, 0.4);
+    --linkgreen:rgba(71, 82, 40, .7);
+    --gren: rgb(71, 82, 40);
+    --white:#fff;
+    --whitesp:rgba(255, 255, 255, 0);
+    --bgcolor:rgba(0, 0, 0, .2);
+    --mdcolor:rgba(0, 0, 0, 1);
+  }
+//  var(--whitesp);
+//   var(--white);
+//   var(--linkgreen);
+//   var(--laitegren);
+//   var(--gren);
+//   var(--bgcolor);
+//   var(--progblock);
+*{
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+a,
+span,
+ul,
+li,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.modactiv{
+    overflow: hidden;
+}
+.container-desc,
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 100%;
+}
+.container{padding: 0 20px;}
+.container-desc{
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    @media (min-width: 1200px){
+        padding: 0;
+        
+    }
+}
+.title,
+.artical{
+    color: var(--gren);
+}
+.title{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    @media (min-width: 768px){
+        text-align: left;
+        font-size: 35px;
+    }
+}
+.artical{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    @media (min-width: 768px){
+        font-size: 26px;
+        text-align: left;
+    }
+}
+.small-artical{
+    max-width: 630px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color:var(--white);
+    text-align: center;
+    @media (min-width: 1200px){
+        text-align: left;
+    }
+}
+.namber-page{
+    display: none;
+    
+    @media (min-width: 768px){
+        display: block;
+        position: absolute;
+        width: 90px;
+        height: 60px;
+        font-size: 60px;
+        font-weight: 700;
+        color:var(--laitegren);
+        span{
+            color:var(--gren);
+    }
+    }
+}
+.none{
+    display: none;
+}
+.noscroll{
+    overflow: hidden;
+}
