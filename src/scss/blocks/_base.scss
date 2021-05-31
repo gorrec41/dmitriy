@@ -65,18 +65,26 @@ img{
         
     }
 }
-.title,
-.artical{
-    color: var(--gren);
-}
+
 .title{
-    font-size: 26px;
+    display: inline-block;
+    position: relative;
+    font-size: 4rem;
     font-weight: 200;
-    text-align: center;
     @media (min-width: 768px){
-        text-align: left;
-        font-size: 35px;
+      
     }
+}
+.title-span {
+    content:'';
+    position: absolute;
+    bottom: -.1rem;
+    left: 0;
+    right: 0;
+    height: .5rem;
+    background: rgba(200, 212, 228, 1);
+    border-radius:.3rem;
+    z-index: -1;
 }
 .artical{
     font-size: 20px;
