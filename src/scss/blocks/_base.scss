@@ -6,6 +6,7 @@
     --white:#fff;
     --whitesp:rgba(255, 255, 255, 0);
     --bgcolor:rgba(0, 0, 0, .2);
+    --bgcolorfoot:rgba(0, 0, 0, .5);
     --mdcolor:rgba(0, 0, 0, 1);
   }
 //  var(--whitesp);
@@ -48,6 +49,12 @@ img{
 }
 .modactiv{
     overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
 }
 .container-desc,
 .container{
