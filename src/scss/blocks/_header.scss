@@ -36,6 +36,13 @@
         color: rgba(30, 40, 43, 0.9);
     }
 }
+.nav-contact,
+.nav-logo{
+    display: none;
+    @media (min-width: 900px) {
+        display: inline-block;
+    }
+}
 .header-img{
     position: absolute;
     right: 0;

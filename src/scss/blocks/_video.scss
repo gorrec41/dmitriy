@@ -19,8 +19,7 @@
 .video-wrap{
     position: relative;
     margin: 0 auto;
-    width: 56rem;
-    height: 31.5rem;
+    
     background: #000;
     &::after{
         content: "";
@@ -31,6 +30,10 @@
         bottom: -.5rem;
         background: #C8D4E4;
         z-index: -1;
+    }
+    @media (min-width: 1200px) {
+        width: 56rem;
+        height: 31.5rem;
     }
 }
 .video-title{

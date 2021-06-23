@@ -62,7 +62,7 @@ img{
     max-width: 1400px;
     height: 100%;
 }
-.container{padding: 0 20px;}
+.container{margin: 0 20px;}
 .container-desc{
     position: relative;
     margin: 0;
@@ -74,24 +74,28 @@ img{
 }
 
 .title{
-    display: inline-block;
-    position: relative;
-    font-size: 4rem;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 200;
     @media (min-width: 768px){
-      
+        display: inline-block;
+        position: relative;
+        font-size: 4rem;  
     }
 }
 .title-span {
-    content:'';
-    position: absolute;
-    bottom: -.1rem;
-    left: 0;
-    right: 0;
-    height: .5rem;
-    background: rgba(200, 212, 228, 1);
-    border-radius:.3rem;
-    z-index: -1;
+    @media (min-width: 768px){
+        content:'';
+        position: absolute;
+        bottom: -.1rem;
+        left: 0;
+        right: 0;
+        height: .5rem;
+        background: rgba(200, 212, 228, 1);
+        border-radius:.3rem;
+        z-index: -1;
+    }
+    
 }
 .artical{
     font-size: 20px;

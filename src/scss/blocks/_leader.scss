@@ -1,17 +1,21 @@
 .leader{
     width: 100%;
     padding: 6rem 0;
-    
 }
 .leader-wrap{
     margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .leader-image{
+    display: block;
+    margin: 0 auto;
     position: relative;
-    margin-right: 3rem;
+    margin-bottom: 3rem;
     max-width: 30rem;
     height: auto;
     img{
@@ -28,10 +32,19 @@
         background: #C8D4E4;
         z-index: -1;
     }
+    @media (min-width: 1200px) {
+
+        display: flex;
+        margin: 0;
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
 } 
 .leader-artical{
-    width: 48rem;
     height: auto;
+    @media (min-width: 1200px) {
+        width: 48rem;
+    }
 }
 .leader-link{
     display: flex;
