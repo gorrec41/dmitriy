@@ -1,7 +1,7 @@
 const gulp = require('gulp'); // Подключаем Gulp
 const browserSync = require('browser-sync').create();
 const watch = require('gulp-watch');
-const sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const notify = require('gulp-notify');
